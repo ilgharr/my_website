@@ -15,17 +15,9 @@ body{
 
 .navbar{
     height: 130px;
-    padding: 0;
-    margin: 0;
-    border: 0;
     font-size: 20px;
-    color: white;
     background-color: #071608;
     background-image:  linear-gradient(to bottom right, #000000, #013f1c);
-
-    display: flex;
-    flex-direction: row;
-    align-items: start;
 }
 
 .kitty {
@@ -35,26 +27,31 @@ body{
     padding: 0;
 }
 
-.fa-github, .fa-linkedin-square{
-    padding: 0 5px;
-    margin: auto 0 auto 15px;
-}
+/*.fa-github, .fa-linkedin-square{*/
+/*    padding: 0 5px;*/
+/*    margin: auto 0 auto 15px;*/
+/*}*/
 
-.github-container a, .linkedin-container a{
-    color: white;
-}
-.github-container a:hover, .linkedin-container a:hover{
-    color: white;
-}
-.github-container a:visited, .linkedin-container a:visited{
-    color: white;
-}
-.github-container a:active, .linkedin-container a:active{
-    color: white;
-}
+/*.github-container a, .linkedin-container a{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.github-container a:hover, .linkedin-container a:hover{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.github-container a:visited, .linkedin-container a:visited{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.github-container a:active, .linkedin-container a:active{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
 
-.github-container, .linkedin-container, .about-me-container, .contact-me-container{
-    background-color: #464646;
-    height: 100%;
-    width: 140px !important; /*this*/
-}
+/*.github-container, .linkedin-container, .about-me-container, .contact-me-container{*/
+/*    background-color: #929292;*/
+/*    height: 100%;*/
+
+
+/*}*/
