@@ -1,3 +1,4 @@
+
 html {
     background-color: #ffffff;
     height: 100%;
@@ -23,35 +24,20 @@ body{
 .kitty {
     border-radius: 15px ;
     height: 100%;
-    margin: 0 0 0 10px;
-    padding: 0;
+    margin: 0;
+    padding: 5px;
 }
 
-/*.fa-github, .fa-linkedin-square{*/
-/*    padding: 0 5px;*/
-/*    margin: auto 0 auto 15px;*/
-/*}*/
+.main-nav {
+    margin: 0 20px 0 auto;
+    padding: 0;
+    min-width: 445px;
+}
 
-/*.github-container a, .linkedin-container a{*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*}*/
-/*.github-container a:hover, .linkedin-container a:hover{*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*}*/
-/*.github-container a:visited, .linkedin-container a:visited{*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*}*/
-/*.github-container a:active, .linkedin-container a:active{*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*.github-container, .linkedin-container, .about-me-container, .contact-me-container{*/
-/*    background-color: #929292;*/
-/*    height: 100%;*/
-
-
-/*}*/
+.mustang{
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
