@@ -4,10 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import kitty from '../images/orange_cat.png';
 import ContactMe from './ContactMe';
+import {Button} from "react-bootstrap";
+import AboutMe from "./AboutMe";
 
-export default function Navigation() {
+export default function Navigation({handleAbout}) {
     const textWhite = "text-white"
-
 
     return (
         <Navbar className="p-0 m-0">
@@ -29,7 +30,7 @@ export default function Navigation() {
                 </Nav.Link>
 
                 <Nav.Link className={textWhite}>
-                    About me
+                    <button className="nav-button" onClick={handleAbout}>About Me</button>
                 </Nav.Link>
 
                 <Nav.Link className={textWhite}>

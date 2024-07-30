@@ -6,11 +6,17 @@ import Main from './components/Main';
 
 export default function App() {
 
+    const [showChild, setShowChild] = React.useState(false);
+
+    const handleAbout = () => {
+        setShowChild(!showChild);
+    };
+
+
     return (
         <>
-            <Navigation/>
-            <Main/>
-            <AboutMe/>
+            <Navigation handleAbout={handleAbout}/>
+            <Main showChild={showChild} />
         </>
     )
 }

@@ -41,3 +41,13 @@ body{
     padding: 0;
     object-fit: cover;
 }
+
+.nav-button{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
