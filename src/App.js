@@ -1,22 +1,26 @@
 import React from 'react';
 
 import Navigation from './components/Navbar';
-import AboutMe from './components/AboutMe';
 import Main from './components/Main';
 
 export default function App() {
 
-    const [showChild, setShowChild] = React.useState(false);
-
+    const [showAboutMe, setShowAboutMe] = React.useState(false);
     const handleAbout = () => {
-        setShowChild(!showChild);
+        setShowAboutMe(!showAboutMe);
+        setShowContactMe(false)
     };
 
+    const [showContactMe, setShowContactMe] = React.useState(false);
+    const handleContact = () => {
+        setShowContactMe(!showContactMe);
+        setShowAboutMe(false)
+    }
 
     return (
         <>
-            <Navigation handleAbout={handleAbout}/>
-            <Main showChild={showChild} />
+            <Navigation handleAbout={handleAbout} handleContact={handleContact} />
+            <Main showAboutMe={showAboutMe} showContactMe={showContactMe}/>
         </>
     )
 }

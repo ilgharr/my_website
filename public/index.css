@@ -21,17 +21,18 @@ body{
     background-image:  linear-gradient(to bottom right, #000000, #013f1c);
 }
 
-.kitty {
-    border-radius: 15px ;
-    height: 100%;
-    margin: 0;
-    padding: 5px;
-}
+/*.kitty {*/
+/*    border-radius: 15px ;*/
+/*    height: 100%;*/
+/*    margin: 0;*/
+/*    padding: 5px;*/
+/*}*/
 
 .main-nav {
-    margin: 0 20px 0 auto;
+    margin: 0 auto 0 auto;
     padding: 0;
     min-width: 445px;
+    overflow: visible;
 }
 
 .mustang{
@@ -48,6 +49,17 @@ body{
     color: inherit;
     cursor: pointer;
     padding: 0;
+    margin: 0;
     font: inherit;
     outline: inherit;
+}
+
+.mustang, .brain, .developer, .learner{
+    height: 100px;
+}
+
+.about-me{
+    width: 700px;
+    margin: 30px auto 0 auto;
+    border: #000000 solid 2px;
 }
