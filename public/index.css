@@ -1,6 +1,4 @@
-
 html {
-    background-color: #ffffff;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -14,11 +12,17 @@ body{
     height: 100%;
 }
 
+#root{
+    height: 100%;
+    width: 100%;
+}
+
 .navbar{
     height: 130px;
     font-size: 20px;
     background-color: #071608;
-    background-image:  linear-gradient(to bottom right, #000000, #013f1c);
+    background-image:  linear-gradient(to bottom right, #000000, #00461f) ;
+
 }
 
 /*.kitty {*/
@@ -33,14 +37,7 @@ body{
     padding: 0;
     min-width: 445px;
     overflow: visible;
-}
-
-.mustang{
-    height: 600px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
+    font-size: 25px;
 }
 
 .nav-button{
@@ -55,11 +52,17 @@ body{
 }
 
 .mustang, .brain, .developer, .learner{
-    height: 100px;
+    height: 250px;
 }
 
 .about-me{
-    width: 700px;
-    margin: 30px auto 0 auto;
-    border: #000000 solid 2px;
+    width: 900px;
+    margin: 50px auto 0 auto;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+
+    -webkit-box-shadow: -1px 1px 9px 9px rgba(255, 255, 255, 0.70);
+    -moz-box-shadow: -1px 1px 9px 9px rgba(255, 255, 255, 0.70);
+    box-shadow: -1px 1px 9px 9px rgba(255, 255, 255, 0.70);
 }

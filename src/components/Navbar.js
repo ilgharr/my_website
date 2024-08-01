@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import kitty from '../images/orange_cat.png';
 
+
 export default function Navigation({handleAbout, handleContact}) {
     const textDecor = "text-white text-nowrap"
 
