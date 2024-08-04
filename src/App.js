@@ -11,7 +11,9 @@ export default function App() {
         backgroundImage: `url(${bg})`,
         height: "100%",
         width: "100%",
-        backgroundPosition: "center center",
+        minHeight: "100vh",
+
+        backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
     }

@@ -16,47 +16,77 @@ import mongo from "../images/mongo.png";
 import oracle from "../images/oracle.png";
 import react from "../images/react.png";
 import node from "../images/node.png";
+import bg from "../images/bg.png";
 
 export default function AboutMe() {
+
+     function myStyle(pic) {
+         return{
+             backgroundImage: `url(${pic})`,
+             height: "400px",
+             width: "100%",
+             backgroundPosition: "center center",
+             backgroundSize: "cover",
+             backgroundRepeat: "no-repeat",
+         }
+    }
+
     return (
         <div className="about-me">
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-            <Row className="row">
+            <Row className="name row">
                 <h3 className="col name">Ilghar Rahno</h3>
             </Row>
-            <Row className="row">
-                <h3 className="col">I'm am a full stack developer</h3>
-                <img src={developer} className="developer col" alt="pixelated image of a computer programmer"/>
+            <Row className="row" style={myStyle(developer)}>
+                <h3 className="aboutme-info col">
+                    I am a full stack developer with a passion for creating dynamic,
+                    responsive web applications. Proficient in both front-end and back-end technologies,
+                    I excel at transforming complex problems into intuitive solutions.
+                </h3>
+                <div className="aboutme-placeholder col"></div>
             </Row>
-            <Row className="row">
-                <img src={mustang} className="mustang col" alt="pixelated image of white 2020 mustang"/>
-                <h3 className="col">A love for driving</h3>
+            <Row className="row" style={myStyle(brain)}>
+                <div className="aboutme-placeholder col"></div>
+                <h3 className="aboutme-info col">
+                    I leverage AI tools to enhance my web development projects,
+                    creating smarter and more efficient websites.
+                    This integration allows me to deliver innovative solutions that improve user experiences.
+                </h3>
             </Row>
-            <Row className="row">
-                <h3 className="col">Using AI to help make websites</h3>
-                <img src={brain} className="brain col" alt="pixelated image of green brain"/>
+            <Row className="row" style={myStyle(learner)}>
+                <h3 className="aboutme-info col">
+                    Beyond development, I have a love for learning and exploring new knowledge.
+                    This curiosity
+                    drives me to continuously expand my skills and stay updated with the latest industry trends.
+                </h3>
+                <div className="aboutme-placeholder col"></div>
             </Row>
-            <Row className="row">
-                <img src={learner} className="learner col" alt="pixelated image of green man learning"/>
-                <h3 className="col">Love learning</h3>
+            <Row className="row" style={myStyle(mustang)}>
+                <div className="aboutme-placeholder col"></div>
+                <h3 className="aboutme-info col">
+                    In my free time, I enjoy driving cars,
+                    finding joy in the thrill and precision it requires.
+                    This passion for driving reflects my dedication to precision and excellence in all my endeavors.
+                </h3>
             </Row>
+
             <Row className="row">
                 <h3 className="col name">Some languages and frameworks I am familiar with</h3>
             </Row>
             <Row>
-                <img src={c} className="col"/>
-                <img src={cpp} className="col"/>
-                <img src={css} className="col"/>
-                <img src={html5} className="col"/>
-                <img src={js} className="col"/>
+                <img src={c} className="lang-img col"/>
+                <img src={cpp} className="lang-img col"/>
+                <img src={css} className="lang-img col"/>
+                <img src={html5} className="lang-img col"/>
+                <img src={js} className="lang-img col"/>
             </Row>
             <Row>
-                <img src={linux} className="col"/>
-                <img src={mongo} className="col"/>
-                <img src={oracle} className="col"/>
-                <img src={react} className="col"/>
-                <img src={node} className="col"/>
+                <img src={linux} className="lang-img col"/>
+                <img src={mongo} className="lang-img col"/>
+                <img src={oracle} className="lang-img col"/>
+                <img src={react} className="lang-img col"/>
+                <img src={node} className="lang-img col"/>
             </Row>
         </div>
     )
