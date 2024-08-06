@@ -1,102 +1,78 @@
-html {
-    padding: 0;
-    margin: 0;
+html,body
+{
     width: 100%;
-    /*height: 100%;*/
-}
-
-body{
-    padding: 0;
+    height: 100%;
     margin: 0;
-    width: 100%;
-    /*height: 100%;*/
-}
-
-#root{
     padding: 0;
-    margin: 0;
-    width: 100%;
-    /*height: 100%;*/
+    overflow-x: hidden;
 }
 
 .navbar{
     height: 80px;
     font-size: 20px;
     background-color: #00060e;
-    /*background-image:  linear-gradient(to bottom right, #000000, #022261) ;*/
+}
 
+.navbar-toggler-icon{
+    background-color: #616161;
+    border-radius: 2px;
+    margin: 20px;
+}
+
+#basic-navbar-nav{
+    background-color: inherit;
 }
 
 .main-nav {
-    margin: 0 auto 0 auto;
-    padding: 0;
-    min-width: 445px;
-    overflow: visible;
     font-size: 25px;
+}
+
+.nav-buttons{
+    margin: 0 25px;
 }
 
 .nav-button{
     background-color: transparent;
     border: none;
-    color: inherit;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    outline: inherit;
+    color: white;
 }
 
 .about-me{
-    width: 1100px;
+    max-width: 1100px;
+    min-width: 360px;
     margin: 0 auto;
-    padding: 5px;
     border-radius: 5px;
     color: #f6f6f6;
-
-    /*background-color: rgba(0, 0, 0, 0.6);*/
-    /*-webkit-box-shadow: -1px 1px 9px 9px rgba(255, 255, 255, 0.70);*/
-    /*-moz-box-shadow: -1px 1px 9px 9px rgba(255, 255, 255, 0.70);*/
-    /*box-shadow: -1px 1px 9px 9px rgba(255, 255, 255, 0.70);*/
-}
-
-/*.about-me .row{*/
-/*    height: 600px;*/
-/*}*/
-
-/*.mustang, .brain, .developer, .learner{*/
-/*    width: 100%;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*}*/
-
-.lang-img{
-    padding: 0;
-    margin: 0;
 }
 
 .name{
-    width: 100%;
     height: 100px;
-    margin: 0;
-    padding: 0;
     text-align: center;
-    font-size: 70px;
+    font-size: 4.25rem;
     font-family: "Roboto Light", sans-serif;
 }
 
-.aboutme-info{
+@media (max-width: 768px) {
+    .name {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+}
+.row .aboutme-info{
     text-align: center;
-    padding: 0 100px;
     font-size: 20px;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    height: 100%;
-    width: 100%;
+
+    margin: 0;
+    padding: 0 40px 0 40px;
 }
 
 .aboutme-placeholder{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
