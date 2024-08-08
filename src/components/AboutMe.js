@@ -29,7 +29,6 @@ export default function AboutMe() {
              backgroundPosition: "center",
              backgroundSize: "cover",
              overflow: "scroll"
-
          }
     }
 
