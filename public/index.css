@@ -27,6 +27,7 @@ html,body {
 
 .main-nav {
     font-size: 25px;
+    margin: auto;
 }
 
 .nav-buttons{
@@ -147,4 +148,6 @@ html,body {
 .contact-me input[type="submit"]:hover {
     background-color: #005bb5;
 }
+
+/*-------------------------------------------------*/
 
