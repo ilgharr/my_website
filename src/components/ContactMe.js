@@ -12,10 +12,10 @@ export default function ContactMe() {
         e.preventDefault();
         emailjs
             .sendForm(
-                'service_rxzbecw',
-                'template_nkg02db',
+                '',
+                '',
                 e.target,
-                'A3LcUf8LSLWRY3O2n'
+                ''
             )
             .then(
                 (result) => {
